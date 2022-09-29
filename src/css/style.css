@@ -1,0 +1,229 @@
+/* variaveis css */
+:root {
+    --branco-principal: #fff;
+    --cinza-secundario: #c0c0c0;
+    --btn-azul: #3791ff;
+    --background: #00030c;
+    --fonte-principal: 'Kanit';
+}
+/**/
+
+/* reset */
+body {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    min-height: 100vh;
+    background-color: var(--background);
+    color: var(--branco-principal)
+}
+/**/
+
+main {
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.main__content {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+.cx__container {
+    margin: 0 6em;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.main__title {
+    font-size: 1.8em;
+}
+
+.main__img {
+    margin: 1rem 0 1rem 0;
+    cursor: pointer;
+}
+
+.btn__plano {
+    display: inline-block;
+    background-color: var(--btn-azul);
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 80%;
+    height: 42px;
+    margin: 1em 0;
+}
+
+.btn__plano:hover {
+    background: rgb(21, 126, 255);
+    color: var(--branco-principal);
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+
+.btn__plano:active {
+    background: rgba(0, 122, 250, 0.7);
+    transition: all 0.2s ease-out;
+}
+
+.btn__aluraplus {
+    display: inline-block;
+    width: 80%;
+    background-color: transparent;
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    border: 1px solid var(--btn-azul);
+    outline: none;
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+}
+
+.btn__aluraplus:hover {
+    background: rgba(21, 126, 255, 0.9);
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+}
+
+.btn__aluraplus:active {
+    background: rgba(21, 126, 255, 0.5);
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.btn__subtitle {
+    font-size: 12px;
+    color: var(--cinza-secundario)
+}
+
+.second__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    margin: 10rem 10rem;
+}
+
+.second__content--img {
+    width: 80%; 
+}
+
+.second__title--description {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.p__description {
+    color: var(--cinza-secundario);
+}
+
+.third__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 10rem 10rem;
+}
+
+.third__content--img {
+    width: 90%;
+    justify-self: flex-end;
+}
+
+.btn__comboplus {
+    background-color: var(--btn-azul);
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    width: 25%;
+    height: 40px;
+    margin: 1rem 0;
+}
+
+.btn__comboplus:hover {
+    background: rgb(21, 126, 255);
+    color: var(--branco-principal);
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+
+.btn__comboplus:active {
+    background: rgba(0, 122, 250, 0.7);
+    transition: all 0.2s ease-out;
+}
+
+.last__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 10rem 10rem;
+}
+
+.last__content--img {
+    width: 90%;
+}
+
+.devices {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    margin: 7rem 0;
+}
+
+.devices__container {
+    padding: 1rem 1rem;
+}
+
+.title__devices {
+    display: flex;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.8rem;
+    margin: 2em 1em;
+}
+
+.list__devices {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.subtitle {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    margin: 2rem 2rem 0 2rem;
+    padding: 5rem;
+    border-top: 1px solid var(--cinza-secundario);
+}
