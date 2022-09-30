@@ -42,7 +42,7 @@ main {
 }
 
 .main__title {
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 .main__img {
@@ -89,10 +89,10 @@ main {
     font-weight: 400;
     font-size: 0.8rem;
     padding: 10px 20px;
-    border: 1px solid var(--btn-azul);
+    border: 1px solid transparent;
     outline: none;
     border-radius: 8px;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.8em;
 }
 
 .btn__aluraplus:hover {
@@ -186,6 +186,7 @@ main {
 }
 
 .devices {
+    font-family: 'Kanit', sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -200,8 +201,8 @@ main {
 .title__devices {
     display: flex;
     justify-content: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.7rem;
+    font-weight: 600;
     margin: 2em 1em;
 }
 
@@ -212,18 +213,69 @@ main {
 }
 
 .subtitle {
-    font-family: 'Kanit', sans-serif;
-    font-size: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 350px;
 }
 
-.copyright {
-    margin: 2rem 2rem 0 2rem;
-    padding: 5rem;
+.footer__img {
     border-top: 1px solid var(--cinza-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 1rem;
 }
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+}
+
+.footer__link {
+    display: flex;
+    text-decoration: none;
+    color: var(--branco-principal);
+    padding: 1rem;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+
+.footer__link:hover {
+    color: var(--btn-azul);
+}
+
+.footer__link:active {
+    color: rgba(55, 145, 255, 0.5);
+}
+
+.copyright, 
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--cinza-secundario);
+}
+
